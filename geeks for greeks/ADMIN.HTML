@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusShare Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+
+        <div class="small-logo">CS</div>
+
+        <span>CampusShare Admin</span>
+
+    </div>
+
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+
+</header>
+
+
+<main class="dashboard">
+
+    <section class="welcome">
+
+        <div>
+
+            <p class="small-text">
+                ADMIN CONTROL CENTER
+            </p>
+
+            <h1>
+                Campus Resource Management
+            </h1>
+
+            <p>
+                Manage resources, bookings and accountability.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Admin Stats -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">📦</div>
+
+            <div>
+
+                <h2 id="adminResources">0</h2>
+
+                <p>Resources</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">⏳</div>
+
+            <div>
+
+                <h2 id="pendingRequests">0</h2>
+
+                <p>Pending Requests</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">✅</div>
+
+            <div>
+
+                <h2 id="approvedRequests">0</h2>
+
+                <p>Approved</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">📊</div>
+
+            <div>
+
+                <h2>87%</h2>
+
+                <p>Resource Utilization</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Requests -->
+
+    <section class="admin-section">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Resource Requests</h2>
+
+                <p>Review student requests.</p>
+
+            </div>
+
+        </div>
+
+
+        <div id="adminRequests"></div>
+
+    </section>
+
+
+    <!-- Resource Inventory -->
+
+    <section class="admin-section">
+
+        <div class="section-header">
+
+            <div>
+
+                <h2>Resource Inventory</h2>
+
+                <p>Current campus resources.</p>
+
+            </div>
+
+        </div>
+
+
+        <div id="adminResourceGrid" class="resource-grid"></div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
